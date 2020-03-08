@@ -11,8 +11,15 @@ public class PassFailChecker {
     public String checkNumber(int number) {
 
 //        TODO implements result
-        String result = "";
+        String result ="number";
+        if (number>=50){
+            return "PASS";
+        }
 
-        return result;
+        else{
+            return "FAIL";
+
+        }
+
     }
 }

@@ -11,8 +11,14 @@ public class LinearEquationChecker {
     public int linearEquation(int a, int b) {
 
 //        TODO implements result
-        int result = 0;
+        int result = a;
+        if(a>0){
+            return (0-b)/a;
+        }
+        else{
+            return 0;
+        }
 
-        return result;
+
     }
 }

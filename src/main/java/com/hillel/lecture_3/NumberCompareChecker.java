@@ -11,7 +11,18 @@ public class NumberCompareChecker {
     public String getGreatestNumber(int a, int b) {
 
 //        TODO implements result
-        String result = "";
+        String result = "int a, int b";
+        if(a>b){
+            return "Number"  + " " + a + " "+ "has greatest value!";
+
+        }
+        if(b>a){
+            return "Number"  + " " + b + " "+ "has greatest value!";
+
+        }
+        if(a==b){
+            return "Numbers"  + " " + a +" " + "and" + " " + b +" " + "are equals!";
+        }
 
         return result;
     }
