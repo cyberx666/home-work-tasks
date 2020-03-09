@@ -11,7 +11,7 @@ public class MaxMinAverageChecker {
     public int getMaxNumber(int a, int b , int c) {
 
 //        TODO implements result
-        int result = 0;
+        int result = Math.max(Math.max(a,b),c);
 
         return result;
     }
@@ -20,7 +20,7 @@ public class MaxMinAverageChecker {
     public int getAverageNumber(int a, int b , int c) {
 
 //        TODO implements result
-        int result = 0;
+        int result = (a+b+c- Math.min(Math.min(a,b), c)-Math.max(Math.max(a,b), c));;
 
         return result;
     }
@@ -29,7 +29,7 @@ public class MaxMinAverageChecker {
     public int getMinNumber(int a, int b , int c) {
 
 //        TODO implements result
-        int result = 0;
+        int result = Math.min(Math.min(a,b),c);
 
         return result;
     }

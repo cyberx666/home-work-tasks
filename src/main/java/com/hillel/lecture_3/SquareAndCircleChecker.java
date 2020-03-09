@@ -21,6 +21,18 @@ public class SquareAndCircleChecker {
 
 //        TODO implements result
         String result = "";
+        Double radius;
+        Double angle;
+        angle = (Math.sqrt(squareArea) / 2);
+        radius = Math.sqrt(circleArea / Math.PI);
+        if(radius <=angle) {
+            return "The circle is in the square";
+        }
+
+        if(radius >=angle){
+            return "The circle is in not in the square";
+
+        }
 
         return result;
     }
