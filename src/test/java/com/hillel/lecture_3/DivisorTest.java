@@ -13,7 +13,7 @@ public class DivisorTest {
     private DivisorChecker divisorChecker = new DivisorChecker();
 
     @Test
-    public void checkThatNumberIsDivisor() {
+    public void checkThatNumberIsDivisor()  {
         int number = 2;
         int divisor = 10;
 
