@@ -8,17 +8,21 @@ import io.qameta.allure.Step;
 public class LinearEquationChecker {
 
     @Step
-    public int linearEquation(int a, int b) {
+    public int linearEquation(int a, int b){
 
 //        TODO implements result
         int result = a;
-        if(a>0){
-            return (0-b)/a;
+        if (a > 0) {
+            return (0 - b) / a;
         }
-        else{
+        if (a == 0){
             return 0;
         }
 
+        if(b==0){
+            return 0/a;
+        }
 
+        return result;
     }
 }
