@@ -12,18 +12,16 @@ public class SquareAndCircleChecker {
 
 //        TODO implements result
         String result = "";
-        Double radius;
-        Double angle;
-        angle = (Math.sqrt(squareArea) / 2);
-        radius = Math.sqrt(circleArea / Math.PI);
-        if(radius <angle) {
-            return "The circle is in the square";
+        toAngle(squareArea);
+       double radius = Math.sqrt(circleArea / Math.PI);
+       if(radius <toAngle(squareArea)) {
+           return "The circle is in the square";
         }
-        if(radius >=angle){
+        if(radius >=toAngle(squareArea)){
             return "The circle is not in the square";
         }
-        if(radius==angle){
-            return "The circle is not in the square";
+        if(radius==toAngle(squareArea)){
+           return "The circle is not in the square";
         }
 
         return result;
@@ -34,27 +32,26 @@ public class SquareAndCircleChecker {
 
 //        TODO implements result
         String result = "";
-        Double radius;
-        Double angle;
-        angle = (Math.sqrt(squareArea) / 2);
-        radius = Math.sqrt(circleArea / Math.PI);
-        Double d1;
-        double d2;
-        d1= (Math.sqrt(4*circleArea/Math.PI));
-        d2= Math.sqrt(2*squareArea);
+        double d1 = (Math.sqrt(4 * circleArea / Math.PI));
+        double d2 = Math.sqrt(2 * squareArea);
 
-        if(d1>d2) {
+        if (d1 > d2) {
             return "The square is in the circle";
         }
 
-        if(d2>=d1){
+        if (d2 >= d1) {
             return "The square is not in the circle";
         }
-
-
-
-
         return result;
     }
+
+   public static double toAngle( double squareArea ) {
+
+      double result = (Math.sqrt(squareArea) / 2);
+       return result;
+
+    }
+
+
 
 }
