@@ -27,8 +27,6 @@ public class PalindromeChecker {
             }
 
         }
-       // System.out.println(B);
-        // System.out.println(C);
         return B.equalsIgnoreCase(C);
 
     }
