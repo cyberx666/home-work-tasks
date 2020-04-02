@@ -2,6 +2,8 @@ package com.hillel.lecture_6;
 
 import io.qameta.allure.Step;
 
+import java.util.Arrays;
+
 /**
  * Created by alpa on 11/2/19
  */
@@ -13,8 +15,9 @@ public class UpperLowerCaseChecker {
 
 //        TODO implements result
         String result = "";
+        String upper = word.toUpperCase();
 
-        return result;
+        return upper;
     }
 
     @Step
@@ -22,8 +25,9 @@ public class UpperLowerCaseChecker {
 
 //        TODO implements result
         String result = "";
+        String lower = word.toLowerCase();
 
-        return result;
+        return lower;
     }
 
     @Step
@@ -31,16 +35,47 @@ public class UpperLowerCaseChecker {
 
 //        TODO implements result
         String result = "";
+        String delimetr;
 
-        return result;
-    }
+
+
+
+        String[] subStr = sentence.split("\\." + " ");
+        for (int i = 0; i < subStr.length; i++) {
+
+            String string = subStr[i];
+            String var = string.substring(0, 1).toUpperCase();
+            subStr[i] = var + string.substring(1);
+            result += subStr[i]+" ";
+
+
+        }
+
+
+            return result;
+        }
+
+
+
 
     @Step
-    public String eachLetterToUpperCase(String sentence) {
+    public String eachLetterToUpperCase(String sentence){
 
 //        TODO implements result
-        String result = "";
+            String result = "";
 
-        return result;
-    }
+
+            String[] subStr = sentence.split( " ");
+            for (int i = 0; i < subStr.length; ++i) {
+                String string = subStr[i];
+                String var = string.substring(0, 1).toUpperCase();
+                subStr[i] = var + string.substring(1);
+                //result = Arrays.toString(subStr);
+                result += subStr[i]+" ";
+            }
+
+
+                return result;
+            }
+
 }

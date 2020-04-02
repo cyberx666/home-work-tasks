@@ -13,7 +13,16 @@ public class CountWordsOfEachLengthChecker {
 //        TODO implements result
         int result = 0;
 
-        return result;
+        String words[] = sentence.split(" ");
+        int i;
+        for (i = 0; i < wordLength; i++) {
+            if (words[i].length() > wordLength) {
+               break;
+            }
+            //return (i==size);
+        }
+        return i;
+
     }
 
 

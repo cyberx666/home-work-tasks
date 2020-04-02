@@ -14,6 +14,10 @@ public class LetterRemovalChecker {
 //        TODO implements result
         String result = "";
 
-        return result;
+        String delete = sentence.replace(letterFoRemove, "");
+
+
+
+        return delete;
     }
 }
